@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='I also designed the main ui / hud of the game.'><title>Pixel Art Games 2021 - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel.</title>
+
+<link rel='canonical' href='https://vincentcolor.vercel.app/posts/pixel-art-games-2021/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Pixel Art Games 2021 - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel.'>
+<meta property='og:description' content='I also designed the main ui / hud of the game.'>
+<meta property='og:url' content='https://vincentcolor.vercel.app/posts/pixel-art-games-2021/'>
+<meta property='og:site_name' content='vincent color'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-07-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-07-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://tlandroidgames.com/wp-content/uploads/2020/05/pico-hero.jpg' />
+<meta name="twitter:title" content="Pixel Art Games 2021 - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel.">
+<meta name="twitter:description" content="I also designed the main ui / hud of the game."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tlandroidgames.com/wp-content/uploads/2020/05/pico-hero.jpg' /><style>
+		.imgrow img{
+		width: 45%;
+		margin: 2px;
+	}
+</style>
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://vincentcolor.vercel.app/">vincent color</a></h1>
+        <h2 class="site-description">Best place of Wallpapers for free download. We have about (17073) Wallpapers in jpg format. sort by newest first , lively wallpaper, wallpaper photo.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/pixel-art-games-2021/">
+                
+                    <img src="https://tlandroidgames.com/wp-content/uploads/2020/05/pico-hero.jpg" loading="lazy" alt="Featured image of post Pixel Art Games 2021 - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/trending/" >
+                Trending
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/pixel-art-games-2021/">Pixel Art Games 2021 - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        I also designed the main ui / hud of the game.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jul 19, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<p>Pixel Art Games 2021 - Have fun playing pixel art 2 one of the best puzzle game on kiz10.com.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://i2.wp.com/ytimg.googleusercontent.com/vi/HwAelilII2s/mqdefault.jpg?resize=500,500"><img alt="Kc4o6o10emdjlm In the video game industry, 2021 is expected to see the release of many new video games. https hermes personare com br single top 25 best upcoming pixel art indie games 2021 hwaelilii2s" src="https://i2.wp.com/ytimg.googleusercontent.com/vi/HwAelilII2s/mqdefault.jpg?resize=500,500" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KYj5iiAgl8Tu5d6u53HkadUqKk7MD_f9_g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 500x500 px</li> 
+    <mark>Kc4o6o10emdjlm </mark> - Drawing pixel art is easier than ever while using pixilart.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/-ZJME_FtYJU/maxresdefault.jpg"><img alt="Top 25 Best Upcoming Pixel Art Games Of 2021 Youtube With a huge pallet of colors and different sized brushes, the only limit is your own imagination! top 25 best upcoming pixel art games of 2021" src="https://i.ytimg.com/vi/-ZJME_FtYJU/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c_r5D9MpZN_ZqI8vby5qDLjlCjJQ5v5W2A&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Top 25 Best Upcoming Pixel Art Games Of 2021 Youtube </mark> - See more ideas about pixel art games, pixel art, pixel.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i2.wp.com/www.play-asia.com/blog/wp-content/uploads/2021/01/bigNews_blog_Pre-Order_011121_Battle-Axe_PREORDER.jpg?resize=720%2C360&amp;ssl=1"><img alt="Pixel Art Arcade Adventure Game Battle Axe Now Open For Pre Order You can color everything from dogs and cats to bicycles and helicopters! pixel art arcade adventure game battle" src="https://i2.wp.com/www.play-asia.com/blog/wp-content/uploads/2021/01/bigNews_blog_Pre-Order_011121_Battle-Axe_PREORDER.jpg?resize=720%2C360&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjZyz6JZqwYQE08sGE_g9kbNM5uU1nduTaA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 720x360 px</li> 
+    <mark>Pixel Art Arcade Adventure Game Battle Axe Now Open For Pre Order </mark> - You must find the same pieces from right window to unlock the original picture.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://switchrpg.com/files/2021/01/upcoming-pixel-2021.png"><img alt="Pixel Art Switch Rpgs Coming 2021 Switch Rpg Www.deviantart.com/svartya/gal… opening my pixel art animations commissions aswell. switchrpg" src="https://switchrpg.com/files/2021/01/upcoming-pixel-2021.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQo13mzmNg8Mi6WMYeMjYYatYi5ZcBNH6dA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1221x687 px</li> 
+    <mark>Pixel Art Switch Rpgs Coming 2021 Switch Rpg </mark> - Choose your drawing, and then select the correct colors to try and match the picture perfectly.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://gamespredator.com/wp-content/uploads/2021/01/micetopia-ios-android-header.jpg"><img alt="Micetopia Is An Upcoming Pixel Art Metroidvania That S Heading For Ios And Android Articles Games Predator You&#039;ve probably never played an online coloring game quite like this one before! upcoming pixel art metroidvania" src="https://gamespredator.com/wp-content/uploads/2021/01/micetopia-ios-android-header.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrAWxg8yCRdimjrtgZ0pIP8OhcGHnBwiPiQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1010x504 px</li> 
+    <mark>Micetopia Is An Upcoming Pixel Art Metroidvania That S Heading For Ios And Android Articles Games Predator </mark> - Pixel studio is a new pixel art editor for artists and game developers.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn.akamai.steamstatic.com/steam/apps/785050/extras/image_1a.png?t=1605892748"><img alt="Massive Galaxy On Steam Absolutely love pixel art being used in indie games, so here&#039;s a look at 25 upcoming titles that i&#039;m pretty sure will launch by 2021!00:00 ► start 00:20 ►. massive galaxy on steam" src="https://cdn.akamai.steamstatic.com/steam/apps/785050/extras/image_1a.png?t=1605892748" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8xqntSLaFyGiDwW70wuL8do_v-e4VnJuiKw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 616x347 px</li> 
+    <mark>Massive Galaxy On Steam </mark> - In this video, we will show you our top 10 best upcoming pixel art games of 2018 | new pixel art games, pc, mac, linux, ps4
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://tlandroidgames.com/wp-content/uploads/2020/07/bit-legends.jpg"><img alt="24 Best New Android Pixel Art Games Of 2021 Tl Android Games In this video, we will show you our top 10 best upcoming pixel art games of 2018 | new pixel art games, pc, mac, linux, ps4 android pixel art games of 2021" src="https://tlandroidgames.com/wp-content/uploads/2020/07/bit-legends.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zG8EVQ34VXFNJx2Q5O0Vcvhe89iVEFhxxw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 600x439 px</li> 
+    <mark>24 Best New Android Pixel Art Games Of 2021 Tl Android Games </mark> - Here&#039;s the top 25 new upcoming pixel.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/yxZVglZKMzE/maxresdefault.jpg"><img alt="Best Upcoming Pixel Art Games 2020 Beyond Youtube You&#039;ve probably never played an online coloring game quite like this one before! best upcoming pixel art games 2020 beyond" src="https://i.ytimg.com/vi/yxZVglZKMzE/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uaHKNhqcIu7-pm6hRf6IAtuJYwmnP098Mg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Best Upcoming Pixel Art Games 2020 Beyond Youtube </mark> - Shovel knight has 2d pixel art, a simple gameplay, and a retro feel.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://media.onlinecoursebay.com/2019/03/20011952/1340830_8bed_4-750x405.jpg"><img alt="2021 Pixel Art Mastery The 1 Course On Retro Video Game Art Udemy Free Download Choose a game that helps relieve stress, let&#039;s draw together and share your picture with your friends to express friendship! 2021 pixel art mastery the 1 course" src="https://media.onlinecoursebay.com/2019/03/20011952/1340830_8bed_4-750x405.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfKLYBvV2t7tIN3NJpl23o_u12ZtvsVE2PLw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 750x405 px</li> 
+    <mark>2021 Pixel Art Mastery The 1 Course On Retro Video Game Art Udemy Free Download </mark> - Choose a game that helps relieve stress, let&#039;s draw together and share your picture with your friends to express friendship!
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://play-lh.googleusercontent.com/VE_AWSB87s2h_ISfWEfU1t4d481x50NLeOBppPdS9ZXQivKFOPP929FvaefQ97Bfyq4=s200"><img alt="Download Sans Pixel Art Color By Number Game 2021 Free For Android Sans Pixel Art Color By Number Game 2021 Apk Download Steprimo Com Fill in each pixel with the color of your choice in this color by number style game. download sans pixel art color by" src="https://play-lh.googleusercontent.com/VE_AWSB87s2h_ISfWEfU1t4d481x50NLeOBppPdS9ZXQivKFOPP929FvaefQ97Bfyq4=s200" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1DDEtIOpS6pogmCQKq-GNwGzfeB3T4EdyQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 200x200 px</li> 
+    <mark>Download Sans Pixel Art Color By Number Game 2021 Free For Android Sans Pixel Art Color By Number Game 2021 Apk Download Steprimo Com </mark> - You&#039;ve probably never played an online coloring game quite like this one before!
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/evNo-eqqsFA/maxresdefault.jpg"><img alt="Top Upcoming Anticipated Pixel Art Games 2021 Youtube Have fun playing pixel art 2 one of the best puzzle game on kiz10.com. youtube" src="https://i.ytimg.com/vi/evNo-eqqsFA/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNsxFvEp3Ow3iaYAY-vVmvfq1FiHrBh6zMYg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Top Upcoming Anticipated Pixel Art Games 2021 Youtube </mark> - If you love 2d games with pixel art style you&#039;ll love this video.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://ucarecdn.com/09de3659-0d7e-4a67-b87e-93278b0e8d84/-/format/auto/-/progressive/yes/-/preview/480x480/"><img alt="37 Best Pixel Art Sprite Editors As Of 2021 Slant It stands out in an era dominated by 3d titles with super detailed graphics and convoluted gameplay because of its. 37 best pixel art sprite editors as" src="https://ucarecdn.com/09de3659-0d7e-4a67-b87e-93278b0e8d84/-/format/auto/-/progressive/yes/-/preview/480x480/" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvTzw0ulrDiKTC2yq0JBFXkAhwzBPBnhC0Qw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x281 px</li> 
+    <mark>37 Best Pixel Art Sprite Editors As Of 2021 Slant </mark> - There are easy images to create that.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/J7ezds7PQH0/maxresdefault.jpg"><img alt="Top 18 Amazing Upcoming Nintendo Switch Pixel Art Games 2020 2021 Youtube I also designed the main ui / hud of the game. top 18 amazing upcoming nintendo switch pixel art games 2020 2021" src="https://i.ytimg.com/vi/J7ezds7PQH0/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjdfsdF9uzm-gig7YB8a3PKKOYvkpB5_Jzw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Top 18 Amazing Upcoming Nintendo Switch Pixel Art Games 2020 2021 Youtube </mark> - Choose your drawing, and then select the correct colors to try and match the picture perfectly.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn.cloudflare.steamstatic.com/steam/apps/1033950/capsule_616x353.jpg?t=1612376333"><img alt="Lamentum On Steam In this video, we will show you our top 10 best upcoming pixel art games of 2018 | new pixel art games, pc, mac, linux, ps4 lamentum on steam" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1033950/capsule_616x353.jpg?t=1612376333" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYZV6v-vsL-EV2pLk_9hxrZB-zBv2GW95Vw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 616x353 px</li> 
+    <mark>Lamentum On Steam </mark> - Game is it&#039;s therapy, play this game to relax, this is certainly one of the best pixel art and indie games i have ever seen.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://tlandroidgames.com/wp-content/uploads/2020/06/bit-dungeon-iii.jpg"><img alt="24 Best New Android Pixel Art Games Of 2021 Tl Android Games I focused on backgrounds, assets, and ui design. android pixel art games of 2021" src="https://tlandroidgames.com/wp-content/uploads/2020/06/bit-dungeon-iii.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0JSMKCUMjNQaZf0r3OQ3V8-1J7EO8khDVg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 600x338 px</li> 
+    <mark>24 Best New Android Pixel Art Games Of 2021 Tl Android Games </mark> - If you&#039;re interested in learning how to make pixel art games using techniques like pixel art color by number, udemy has a course to help you develop 2d video games like a pro.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.gematsu.com/wp-content/uploads/2020/01/Battle-Axe_01-29-20.jpg"><img alt="Pixel Art Arcade Adventure Game Battle Axe Kickstarter Campaign Launched Gematsu Focus on art for games, animation and ui. gematsu" src="https://www.gematsu.com/wp-content/uploads/2020/01/Battle-Axe_01-29-20.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooDuPjIQjAhIAM_V6dsMvW_57zMf9Qvrnhg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 600x420 px</li> 
+    <mark>Pixel Art Arcade Adventure Game Battle Axe Kickstarter Campaign Launched Gematsu </mark> - Absolutely love pixel art being used in indie games, so here&#039;s a look at 25 upcoming titles that i&#039;m pretty sure will launch by 2021!00:00 ► start 00:20 ►.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.pinimg.com/originals/cf/d5/9e/cfd59e5908e8ec1fe94420283c118f62.png"><img alt="Platformer Graphic Pack Cave 2d Environments Unity Asset Store In 2021 Cool Pixel Art Game Background Art Pixel Art Games I focused on backgrounds, assets, and ui design. platformer graphic pack cave 2d" src="https://i.pinimg.com/originals/cf/d5/9e/cfd59e5908e8ec1fe94420283c118f62.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYmkztevP3evpseaL2aAPhgT5684M69Xgag&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x630 px</li> 
+    <mark>Platformer Graphic Pack Cave 2d Environments Unity Asset Store In 2021 Cool Pixel Art Game Background Art Pixel Art Games </mark> - Focus on art for games, animation and ui.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://xenocell.com/wp-content/uploads/2021/01/cgamefotoStardew-Valley-GOG-Sale-1-855x280.jpg"><img alt="Pixel Art Games On Sale At Gog Includes Stardew Valley And To The Moon Xenocell Com In this video, we will show you our top 10 best upcoming pixel art games of 2018 | new pixel art games, pc, mac, linux, ps4 gog includes stardew valley" src="https://xenocell.com/wp-content/uploads/2021/01/cgamefotoStardew-Valley-GOG-Sale-1-855x280.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnQKzTIfn8-D5iKSA5BwgXgtvVjEVlwVbSTA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 855x280 px</li> 
+    <mark>Pixel Art Games On Sale At Gog Includes Stardew Valley And To The Moon Xenocell Com </mark> - See more ideas about pixel art games, pixel art, pixel.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.droidgamers.com/wp-content/uploads/2021/03/clan-n.jpg"><img alt="Pixel Art Beat Em Up Clan N Is Out Now On Android Droid Gamers I focused on backgrounds, assets, and ui design. pixel art beat em up clan n is out now" src="https://www.droidgamers.com/wp-content/uploads/2021/03/clan-n.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rZKnBGAPO18KnLdsGGovAj7CNfp_SLsV6Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 551x310 px</li> 
+    <mark>Pixel Art Beat Em Up Clan N Is Out Now On Android Droid Gamers </mark> - You&#039;ve probably never played an online coloring game quite like this one before!
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://tlandroidgames.com/wp-content/uploads/2020/12/eternis-heroes.jpg"><img alt="24 Best New Android Pixel Art Games Of 2021 Tl Android Games Remember to turn off the grid to view your artwork without the guides! android pixel art games of 2021" src="https://tlandroidgames.com/wp-content/uploads/2020/12/eternis-heroes.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFDT08OFp5jEj8MkTrMA2dGKKIPFsaRVkzw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 535x307 px</li> 
+    <mark>24 Best New Android Pixel Art Games Of 2021 Tl Android Games </mark> - You&#039;ve probably never played an online coloring game quite like this one before!
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/cyberpunk-2077-iphone-xs-max-wallpapers" target="_blank">Cyberpunk 2077 Iphone Xs Max Wallpapers</a></li>
+		
+<li><a href="/posts/criminal-bundle-wallpaper-top-criminal-free-fire-png" target="_blank">Criminal Bundle Wallpaper Top Criminal Free Fire Png</a></li>
+		
+<li><a href="/posts/cover-letter-examples-nursing-assistant" target="_blank">Cover Letter Examples Nursing Assistant</a></li>
+		
+<li><a href="/posts/registered-cover-letter-examples-nursing" target="_blank">Registered Cover Letter Examples Nursing</a></li>
+		
+<li><a href="/posts/paw-patrol-logo-png-transparent" target="_blank">Paw Patrol Logo Png Transparent</a></li>
+		
+<li><a href="/posts/pious-meaning-in-urdu" target="_blank">Pious Meaning In Urdu</a></li>
+		
+<li><a href="/posts/black-abyssinian-guinea-pig" target="_blank">Black Abyssinian Guinea Pig</a></li>
+		
+<li><a href="/posts/winter-pubg-hd" target="_blank">Winter Pubg Hd</a></li>
+		
+<li><a href="/posts/shayari-teddy-day-images-for-whatsapp-status" target="_blank">Shayari Teddy Day Images For Whatsapp Status</a></li>
+		
+<li><a href="/posts/garden-design-ideas-nz" target="_blank">Garden Design Ideas Nz</a></li>
+		
+<li><a href="/posts/geralds-game-carel-struycken" target="_blank">Geralds Game Carel Struycken</a></li>
+		
+<li><a href="/posts/eleanor-roosevelt-quotes-the-purpose-of-life" target="_blank">Eleanor Roosevelt Quotes The Purpose Of Life</a></li>
+		
+<li><a href="/posts/andrew-jackson-quotes-about-the-indian-removal-act" target="_blank">Andrew Jackson Quotes About The Indian Removal Act</a></li>
+		
+<li><a href="/posts/pixel-art-carnevale-maestro-alberto" target="_blank">Pixel Art Carnevale Maestro Alberto</a></li>
+		
+<li><a href="/posts/best-4k-minimalistic-wallpapers-for-pc" target="_blank">Best 4K Minimalistic Wallpapers For Pc</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/cool-pixel-art-minecraft" target="_blank">Cool Pixel Art Minecraft</a></li>
+		
+<li><a href="/posts/wallpapers-for-girls-dark" target="_blank">Wallpapers For Girls Dark</a></li>
+		
+<li><a href="/posts/college-cover-letter-examples-internship" target="_blank">College Cover Letter Examples Internship</a></li>
+		
+<li><a href="/posts/logo-vector-super-bowl-2021-logo-png" target="_blank">Logo Vector Super Bowl 2021 Logo Png</a></li>
+		
+<li><a href="/posts/cute-dino-wallpaper-lila" target="_blank">Cute Dino Wallpaper Lila</a></li>
+		
+<li><a href="/posts/free-fire-tournament-images-2021" target="_blank">Free Fire Tournament Images 2021</a></li>
+		
+<li><a href="/posts/naruto-sage-of-six-paths-hd" target="_blank">Naruto Sage Of Six Paths Hd</a></li>
+		
+<li><a href="/posts/cyberpunk-wallpapers-phone" target="_blank">Cyberpunk Wallpapers Phone</a></li>
+		
+<li><a href="/posts/golden-pharaoh-pubg-hd-wallpaper" target="_blank">Golden Pharaoh Pubg Hd Wallpaper</a></li>
+		
+<li><a href="/posts/funny-status-for-whatsapp-in-urdu" target="_blank">Funny Status For Whatsapp In Urdu</a></li>
+		
+<li><a href="/posts/free-fire-arctic-blue-png" target="_blank">Free Fire Arctic Blue Png</a></li>
+		
+<li><a href="/posts/hair-style-2021-woman-color" target="_blank">Hair Style 2021 Woman Color</a></li>
+		
+<li><a href="/posts/pubg-season-17-character-png" target="_blank">Pubg Season 17 Character Png</a></li>
+		
+<li><a href="/posts/black-full-hd-cars-wallpapers" target="_blank">Black Full Hd Cars Wallpapers</a></li>
+		
+<li><a href="/posts/wind-power-diagrams" target="_blank">Wind Power Diagrams</a></li>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 vincent color
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

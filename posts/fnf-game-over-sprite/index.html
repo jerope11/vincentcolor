@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='I made the game as nothing more than a small project, i didn&amp;#039;t want to work on it anymore than a few days.'><title>Fnf Game Over Sprite / Import pygame import random import pygame.mixer import funk from player import * from zombie import * from level.</title>
+
+<link rel='canonical' href='https://vincentcolor.vercel.app/posts/fnf-game-over-sprite/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Fnf Game Over Sprite / Import pygame import random import pygame.mixer import funk from player import * from zombie import * from level.'>
+<meta property='og:description' content='I made the game as nothing more than a small project, i didn&amp;#039;t want to work on it anymore than a few days.'>
+<meta property='og:url' content='https://vincentcolor.vercel.app/posts/fnf-game-over-sprite/'>
+<meta property='og:site_name' content='vincent color'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-10-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-10-15T00:00:00&#43;00:00'/><meta property='og:image' content='https://staticdelivery.nexusmods.com/mods/3629/images/thumbnails/20/20-1612402727-292763151.png' />
+<meta name="twitter:title" content="Fnf Game Over Sprite / Import pygame import random import pygame.mixer import funk from player import * from zombie import * from level.">
+<meta name="twitter:description" content="I made the game as nothing more than a small project, i didn&amp;#039;t want to work on it anymore than a few days."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://staticdelivery.nexusmods.com/mods/3629/images/thumbnails/20/20-1612402727-292763151.png' /><style>
+		.imgrow img{
+		width: 45%;
+		margin: 2px;
+	}
+</style>
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://vincentcolor.vercel.app/">vincent color</a></h1>
+        <h2 class="site-description">Best place of Wallpapers for free download. We have about (17073) Wallpapers in jpg format. sort by newest first , lively wallpaper, wallpaper photo.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/fnf-game-over-sprite/">
+                
+                    <img src="https://staticdelivery.nexusmods.com/mods/3629/images/thumbnails/20/20-1612402727-292763151.png" loading="lazy" alt="Featured image of post Fnf Game Over Sprite / Import pygame import random import pygame.mixer import funk from player import * from zombie import * from level." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/trending/" >
+                Trending
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/fnf-game-over-sprite/">Fnf Game Over Sprite / Import pygame import random import pygame.mixer import funk from player import * from zombie import * from level.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        I made the game as nothing more than a small project, i didn&amp;#039;t want to work on it anymore than a few days.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Oct 15, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<p>Fnf Game Over Sprite / We also do some fan made animatronics like candy.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://screenshots.gamebanana.com/img/ss/srends/60099d518a59c.jpg"><img alt="Fnf Game Over Sprite It 039 S Basically Like Ddr Press Arrow When Arrow Over Other Arrow Plus pixelart sega sprite sonicmania pagodawestgames headcannongames. fnf game over sprite it 039 s" src="https://screenshots.gamebanana.com/img/ss/srends/60099d518a59c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWvbeT4I7f4vQ8y5IwI74qvMu_I97gHpPQlw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2560x2048 px</li> 
+    <mark>Fnf Game Over Sprite It 039 S Basically Like Ddr Press Arrow When Arrow Over Other Arrow </mark> - Forum &gt; fun and games board &gt; fnaf sprites.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.redd.it/9jv7ytblsz461.png"><img alt="Yes I Changed Gf S Sprite Into The Puppet In Friday Night Funkin And Yes I Will Try To Remake Fnf With Only Fnaf Related Images This Is Mainly A Teaser Fivenightsatfreddys Plus pixelart sega sprite sonicmania pagodawestgames headcannongames. puppet in friday night funkin" src="https://i.redd.it/9jv7ytblsz461.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfSjh_HI7WilHvrntSn3y9bl-6ZgX51kRYPQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2300x2215 px</li> 
+    <mark>Yes I Changed Gf S Sprite Into The Puppet In Friday Night Funkin And Yes I Will Try To Remake Fnf With Only Fnaf Related Images This Is Mainly A Teaser Fivenightsatfreddys </mark> - So you made your sprite sheet for your very own friday night funkin mod.but every time you put the sprites over whichever character your replacing, it looks bad in game and clips into other sprites!
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://assets.audiomack.com/purplesstickaman-oof/181937119509ef7397de3ecdcd8a0c55381e6e27f1cdc573b4d27efb7fc40133.jpeg?width=1000&amp;height=1000&amp;max=true"><img alt="South Friday Night Funkin By Kawaisprite Listen On Audiomack And now that those few days have passed it&#039;s over. south friday night funkin by" src="https://assets.audiomack.com/purplesstickaman-oof/181937119509ef7397de3ecdcd8a0c55381e6e27f1cdc573b4d27efb7fc40133.jpeg?width=1000&amp;height=1000&amp;max=true" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi9OjW4paQ3MlLmDZVG2QjgNiIvrM6OgBuww&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1000x1000 px</li> 
+    <mark>South Friday Night Funkin By Kawaisprite Listen On Audiomack </mark> - Humans meme friday night funkin fnf week 6 semana 6 senpai bf.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.kym-cdn.com/entries/icons/facebook/000/036/160/fnfcover.jpg"><img alt="Friday Night Funkin Know Your Meme Bro how does the game over screen look like friday night funkin. friday night funkin know your meme" src="https://i.kym-cdn.com/entries/icons/facebook/000/036/160/fnfcover.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06TAwsaGTW9W9L_3ddti5Unxxn6HxuuJEzw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x675 px</li> 
+    <mark>Friday Night Funkin Know Your Meme </mark> - A friday night funkin&#039; (fnf) tutorial in the skinning category, submitted by thelunar27.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.redd.it/tnxvljvozoa61.jpg"><img alt="Saw This Comment On A Gay Pico Spritesheet And I Thought Of A Meme Like This Thinking About It Its Not Even That Funny But Whatever Fridaynightfunkin Humans meme friday night funkin fnf week 6 semana 6 senpai bf. saw this comment on a gay pico" src="https://i.redd.it/tnxvljvozoa61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-y26vdVkKKLwBJ1drZ4wip1EYux6rE8MrQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 596x302 px</li> 
+    <mark>Saw This Comment On A Gay Pico Spritesheet And I Thought Of A Meme Like This Thinking About It Its Not Even That Funny But Whatever Fridaynightfunkin </mark> - Not really a horror game, cause you get jumpscared by boobs.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i1.sndcdn.com/artworks-73yyckdzAiwjswBY-vyksGQ-t500x500.jpg"><img alt="Friday Night Funkin Comp In Game Orden By Pricccccccccccccccccccccccccccccccccccccno Not really a horror game, cause you get jumpscared by boobs. soundcloud" src="https://i1.sndcdn.com/artworks-73yyckdzAiwjswBY-vyksGQ-t500x500.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9L_ZfD1iqaMSGD32WMuBsjw6mBk_FjQkaQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 500x500 px</li> 
+    <mark>Friday Night Funkin Comp In Game Orden By Pricccccccccccccccccccccccccccccccccccccno </mark> - He has thick, black eyebrows and white pupils.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.spriters-resource.com/resources/game_icons/11/10750.png"><img alt="Browser Games Friday Night Funkin The Spriters Resource Jan 28, 2019, 12:05 am. browser games friday night funkin" src="https://www.spriters-resource.com/resources/game_icons/11/10750.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo4_Kt1c3sibj8AkjOpWhmuAoyCrH5MYuNUQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 240x125 px</li> 
+    <mark>Browser Games Friday Night Funkin The Spriters Resource </mark> - This was my first time coding and making a sprite for a favorite game, and i decided to combine to of my fandoms to make thisanyways i might remake this.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.redd.it/yjx45ejf7kk61.png"><img alt="Cbrs4zcrshg Tm In regards to your submission, if you&#039;re just going to submit the game&#039;s original sprite sheets without any changes, expect it to be @leo plays yt: https www reddit com r fridaynightfunkin comments lvvp2w incoming in a few days ill be making all the" src="https://i.redd.it/yjx45ejf7kk61.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqxSk-qn7b3mFt9rzZOtGEyRazYRuPZuUnQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 768x768 px</li> 
+    <mark>Cbrs4zcrshg Tm </mark> - Humans meme friday night funkin fnf week 6 semana 6 senpai bf.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://images.gamebanana.com/img/ss/srends/5fe7bf775cbca.jpg"><img alt="Frisk In Fnf Friday Night Funkin Skin Mods Unique in it&#039;s design, it is a pleasure to hold and very ergonomic and small. frisk in fnf friday night funkin" src="https://images.gamebanana.com/img/ss/srends/5fe7bf775cbca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdOjXZndKBMqo0DapyU-QPQvgJexLpC4RFnw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1706x1400 px</li> 
+    <mark>Frisk In Fnf Friday Night Funkin Skin Mods </mark> - You can only submit your score if you have an account.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/RBbPKdJRggs/hqdefault.jpg"><img alt="Friday Night Funkin Fnf Game Over Screen Youtube 🎮 so uh, if you want me to make the whole game swapped sprite&#039;s i can do it but it will take alot of work so here&#039;s keith for now.😶 #fangame. friday night funkin fnf game over" src="https://i.ytimg.com/vi/RBbPKdJRggs/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTUlr9kQXMVw2NqEdcfdlF93kLEK462JBZA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Friday Night Funkin Fnf Game Over Screen Youtube </mark> - The other sprites are from sega, headcannon games and pagodawest games.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/q8UFRSSnM0w/maxresdefault.jpg"><img alt="Fnf Bopeebo Game Over Speedrun Youtube Unique in it&#039;s design, it is a pleasure to hold and very ergonomic and small. fnf bopeebo game over speedrun youtube" src="https://i.ytimg.com/vi/q8UFRSSnM0w/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM87jMJg_XT5md16TyhgKPW1VEe8bUcw9_9Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Fnf Bopeebo Game Over Speedrun Youtube </mark> - You can only submit your score if you have an account.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://tcrf.net/images/thumb/d/da/FNF_GF_Right_Note_Christmas.gif/374px-FNF_GF_Right_Note_Christmas.gif"><img alt="Fnf Game Over Sprite It 039 S Basically Like Ddr Press Arrow When Arrow Over Other Arrow It&#039;s basically like ddr, press arrow when arrow over other arrow. fnf game over sprite it 039 s" src="https://tcrf.net/images/thumb/d/da/FNF_GF_Right_Note_Christmas.gif/374px-FNF_GF_Right_Note_Christmas.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVDHtDSbn-2zf9hXpGPqbY7m-Ksal_gDz8g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 374x322 px</li> 
+    <mark>Fnf Game Over Sprite It 039 S Basically Like Ddr Press Arrow When Arrow Over Other Arrow </mark> - Not really a horror game, cause you get jumpscared by boobs.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://static.wikia.nocookie.net/fridaynightfunkin/images/b/bc/Helpme.png.png/revision/latest/top-crop/width/300/height/300?cb=20210126041304"><img alt="Fnf Game Over Sprite Open The Game And Play Any Week Not All Are Done Yet Sherbet here, with something new. self desing vercel" src="https://static.wikia.nocookie.net/fridaynightfunkin/images/b/bc/Helpme.png.png/revision/latest/top-crop/width/300/height/300?cb=20210126041304" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9-zFb4HsLVMncIL53uPI3wtWDdH7I6CknQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 300x300 px</li> 
+    <mark>Fnf Game Over Sprite Open The Game And Play Any Week Not All Are Done Yet </mark> - How can fnaf games are most popular.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://assets.audiomack.com/purplesstickaman-oof/e97299a91a73b95147ef044678934f93e47b310674edd776e07f5a5ed82f149a.jpeg?width=1000&amp;height=1000&amp;max=true"><img alt="Friday Night Funkin Satin Panties Week 4 By Kawaisprite Listen On Audiomack How can fnaf games are most popular. friday night funkin satin panties" src="https://assets.audiomack.com/purplesstickaman-oof/e97299a91a73b95147ef044678934f93e47b310674edd776e07f5a5ed82f149a.jpeg?width=1000&amp;height=1000&amp;max=true" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8D2hKChDZjSF_RFRa1baN96UW0Ow3S0peLg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1000x1000 px</li> 
+    <mark>Friday Night Funkin Satin Panties Week 4 By Kawaisprite Listen On Audiomack </mark> - Bro how does the game over screen look like friday night funkin.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/GnSghP5sqik/maxresdefault.jpg"><img alt="Friday Night Funkin Game Over Song Youtube Forum &gt; fun and games board &gt; fnaf sprites. friday night funkin game over song" src="https://i.ytimg.com/vi/GnSghP5sqik/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wEx8wq1p6u9oC0wmYSrw50LQFH7wE-z95w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Friday Night Funkin Game Over Song Youtube </mark> - A friday night funkin&#039; (fnf) tutorial in the skinning category, submitted by thelunar27.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.pinimg.com/originals/f1/6f/3d/f16f3dd00cb87558021b30fcc4d2cb56.gif"><img alt="Friday Night Funkin Gif Fridaynightfunkin Discover Share Gifs Funkin Friday Night Night This was my first time coding and making a sprite for a favorite game, and i decided to combine to of my fandoms to make thisanyways i might remake this. friday night funkin gif" src="https://i.pinimg.com/originals/f1/6f/3d/f16f3dd00cb87558021b30fcc4d2cb56.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEV42qh1ZwKRMZxhYTxq_i0Ii2YkIwqPJlQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 498x278 px</li> 
+    <mark>Friday Night Funkin Gif Fridaynightfunkin Discover Share Gifs Funkin Friday Night Night </mark> - There will be spoilers for fnaf 3, 4 and world.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://tcrf.net/images/thumb/8/89/FNF_boyfriend_attack.gif/354px-FNF_boyfriend_attack.gif"><img alt="Friday Night Funkin The Cutting Room Floor There will be spoilers for fnaf 3, 4 and world. friday night funkin the cutting room" src="https://tcrf.net/images/thumb/8/89/FNF_boyfriend_attack.gif/354px-FNF_boyfriend_attack.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHDnXJMxWyRkMF7WSjtqQNUDImfTcRXHJtA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 354x343 px</li> 
+    <mark>Friday Night Funkin The Cutting Room Floor </mark> - There will be spoilers for fnaf 3, 4 and world.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://f4.bcbits.com/img/a0048592687_5.jpg"><img alt="Friday Night Funkin Ost Vol 1 Kawai Sprite If you want to use fnf mods without downloading click here! friday night funkin ost vol 1 by kawai sprite" src="https://f4.bcbits.com/img/a0048592687_5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwr1bJCerUQr5dbGman_GM780h-3UzA-27PQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 700x700 px</li> 
+    <mark>Friday Night Funkin Ost Vol 1 Kawai Sprite </mark> - That was fun , anyways i redrew their sprites and wanted to see them taller (like mom and dad) so.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.redd.it/jdmvw44e4rf61.png"><img alt="More Gura In Fnf Style Made By Me This Time As An Actual Sprite Sheet I May Or May Not Do More Of These And Actually Make This Into A Mod For 🎮 so uh, if you want me to make the whole game swapped sprite&#039;s i can do it but it will take alot of work so here&#039;s keith for now.😶 #fangame. more gura in fnf style made by me this" src="https://i.redd.it/jdmvw44e4rf61.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBcBS9Eksee1tm9VIkmeyqIzWKCY9tj2Cjw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1195x905 px</li> 
+    <mark>More Gura In Fnf Style Made By Me This Time As An Actual Sprite Sheet I May Or May Not Do More Of These And Actually Make This Into A Mod For </mark> - That was fun , anyways i redrew their sprites and wanted to see them taller (like mom and dad) so.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://static.wikia.nocookie.net/fridaynightfunkin/images/7/7f/BoyfriendXmas.gif/revision/latest?cb=20210126153746"><img alt="Boyfriend Friday Night Funkin Wiki Fandom 3.don&#039;t stand for your sprite! boyfriend friday night funkin wiki" src="https://static.wikia.nocookie.net/fridaynightfunkin/images/7/7f/BoyfriendXmas.gif/revision/latest?cb=20210126153746" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnrCK3dbfUwgGWTCHqMTrN65bLX6Cnp7BNqg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 411x382 px</li> 
+    <mark>Boyfriend Friday Night Funkin Wiki Fandom </mark> - 3.don&#039;t stand for your sprite!
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/you-guys-are-getting-paid-meme-original" target="_blank">You Guys Are Getting Paid Meme Original</a></li>
+		
+<li><a href="/posts/dark-couple-love-images-hd" target="_blank">Dark Couple Love Images Hd</a></li>
+		
+<li><a href="/posts/easy-wind-power-diagram" target="_blank">Easy Wind Power Diagram</a></li>
+		
+<li><a href="/posts/super-bowl-miley-cyrus-crowd" target="_blank">Super Bowl Miley Cyrus Crowd</a></li>
+		
+<li><a href="/posts/pumpkin-meme-gif" target="_blank">Pumpkin Meme Gif</a></li>
+		
+<li><a href="/posts/top-criminal-azul-free-fire-png" target="_blank">Top Criminal Azul Free Fire Png</a></li>
+		
+<li><a href="/posts/chocolate-day-images-download" target="_blank">Chocolate Day Images Download</a></li>
+		
+<li><a href="/posts/covid-symptoms-hands" target="_blank">Covid Symptoms Hands</a></li>
+		
+<li><a href="/posts/lil-peep-quotes-star-shopping" target="_blank">Lil Peep Quotes Star Shopping</a></li>
+		
+<li><a href="/posts/office-backgrounds-for-ms-teams" target="_blank">Office Backgrounds For Ms Teams</a></li>
+		
+<li><a href="/posts/illuminates-symbol" target="_blank">Illuminates Symbol</a></li>
+		
+<li><a href="/posts/forza-horizon-4-autos" target="_blank">Forza Horizon 4 Autos</a></li>
+		
+<li><a href="/posts/cyberpunk-judy-fanart" target="_blank">Cyberpunk Judy Fanart</a></li>
+		
+<li><a href="/posts/ex-arm-anime-trailer" target="_blank">Ex Arm Anime Trailer</a></li>
+		
+<li><a href="/posts/partes-de-la-celula-animal-con-nombres" target="_blank">Partes De La Celula Animal Con Nombres</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/flower-paintings-georgia-o-keeffe" target="_blank">Flower Paintings Georgia O Keeffe</a></li>
+		
+<li><a href="/posts/iphone-12-wallpaper-original" target="_blank">Iphone 12 Wallpaper Original</a></li>
+		
+<li><a href="/posts/pixel-pokemon-red-sprites" target="_blank">Pixel Pokemon Red Sprites</a></li>
+		
+<li><a href="/posts/quotes-teddy-day-images-for-whatsapp-status" target="_blank">Quotes Teddy Day Images For Whatsapp Status</a></li>
+		
+<li><a href="/posts/friday-quotes-short" target="_blank">Friday Quotes Short</a></li>
+		
+<li><a href="/posts/oxford-shoes-summer-outfit" target="_blank">Oxford Shoes Summer Outfit</a></li>
+		
+<li><a href="/posts/free-fire-pro-wallpapers" target="_blank">Free Fire Pro Wallpapers</a></li>
+		
+<li><a href="/posts/best-backgrounds-for-pc" target="_blank">Best Backgrounds For Pc</a></li>
+		
+<li><a href="/posts/cyberpunk-2077-xbox-series-x-graphics" target="_blank">Cyberpunk 2077 Xbox Series X Graphics</a></li>
+		
+<li><a href="/posts/bronze-tier-pubg-png" target="_blank">Bronze Tier Pubg Png</a></li>
+		
+<li><a href="/posts/pubg-landing-wallpaper-hd" target="_blank">Pubg Landing Wallpaper Hd</a></li>
+		
+<li><a href="/posts/buddha-black-and-white-images" target="_blank">Buddha Black And White Images</a></li>
+		
+<li><a href="/posts/oregon-trail-game" target="_blank">Oregon Trail Game</a></li>
+		
+<li><a href="/posts/positive-quote-corona" target="_blank">Positive Quote Corona</a></li>
+		
+<li><a href="/posts/tiktok-icon-black" target="_blank">Tiktok Icon Black</a></li>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 vincent color
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

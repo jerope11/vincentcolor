@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Data visualization, live charts, gauges, and triggers using arduino.'><title>Home Automation Dashboard / I love dashboards.ever since seeing the lcars and okudagrams in.</title>
+
+<link rel='canonical' href='https://vincentcolor.vercel.app/posts/home-automation-dashboard/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//sorryfearknockout.com/6f/6f/d7/6f6fd798742a3672cd689b8508032d02.js'></script><meta property='og:title' content='Home Automation Dashboard / I love dashboards.ever since seeing the lcars and okudagrams in.'>
+<meta property='og:description' content='Data visualization, live charts, gauges, and triggers using arduino.'>
+<meta property='og:url' content='https://vincentcolor.vercel.app/posts/home-automation-dashboard/'>
+<meta property='og:site_name' content='vincent color'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-08-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-08-21T00:00:00&#43;00:00'/><meta property='og:image' content='https://miro.medium.com/max/712/1*J2_TOFV7UpJ6a9xdLpEivA.png' />
+<meta name="twitter:title" content="Home Automation Dashboard / I love dashboards.ever since seeing the lcars and okudagrams in.">
+<meta name="twitter:description" content="Data visualization, live charts, gauges, and triggers using arduino."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://miro.medium.com/max/712/1*J2_TOFV7UpJ6a9xdLpEivA.png' /><style>
+		.imgrow img{
+		width: 45%;
+		margin: 2px;
+	}
+</style>
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://vincentcolor.vercel.app/">vincent color</a></h1>
+        <h2 class="site-description">Best place of Wallpapers for free download. We have about (17073) Wallpapers in jpg format. sort by newest first , lively wallpaper, wallpaper photo.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/home-automation-dashboard/">
+                
+                    <img src="https://miro.medium.com/max/712/1*J2_TOFV7UpJ6a9xdLpEivA.png" loading="lazy" alt="Featured image of post Home Automation Dashboard / I love dashboards.ever since seeing the lcars and okudagrams in." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/trending/" >
+                Trending
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/home-automation-dashboard/">Home Automation Dashboard / I love dashboards.ever since seeing the lcars and okudagrams in.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Data visualization, live charts, gauges, and triggers using arduino.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 21, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<p>Home Automation Dashboard / Thanks to dashboard layouts i no longer have to the main reason (in my opinion) home assistant is more popular than nodered is the gui (graphical.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://blog.athom.com/wp-content/uploads/2019/04/og-image-1024x521.png"><img alt="Homey Ink An E Ink Homey Dashboard Homey Home automation dashboard app by axel nemeth on dribbble. homey ink an e ink homey dashboard homey" src="https://blog.athom.com/wp-content/uploads/2019/04/og-image-1024x521.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7Eu0gszfNybvUx9Fga_NBghu_BDW0aGELQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1024x521 px</li> 
+    <mark>Homey Ink An E Ink Homey Dashboard Homey </mark> - Dashboard for all client types mqtt broker with client functionalities
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.madskristensen.net/posts/files/20200130_040906613_iOS_thumb_637160068712057096.jpg"><img alt="The Dashboard For Our Smart Home For years we&#039;ve seen a trickle of really interesting home automation projects that use the you can use it as an information dashboard for the weather forecast, latest hackaday articles, bus schedules. the dashboard for our smart home" src="https://www.madskristensen.net/posts/files/20200130_040906613_iOS_thumb_637160068712057096.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9SytAfswDeTL6jQTDrvU3x2eU9fwe_1AJjg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x794 px</li> 
+    <mark>The Dashboard For Our Smart Home </mark> - This is the first time that.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.madskristensen.net/posts/files/20200130_040848334_iOS_thumb_637160068700727722.jpg"><img alt="The Dashboard For Our Smart Home .a powerful home automation dashboard, on your raspberry pi to monitor, configure and interact with the various smart devices scattered throughout your home. the dashboard for our smart home" src="https://www.madskristensen.net/posts/files/20200130_040848334_iOS_thumb_637160068700727722.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgEvSRYySThfMeWzv2iszsW8oBkbvr0tF6w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x794 px</li> 
+    <mark>The Dashboard For Our Smart Home </mark> - Iot automation dashboard © gpl3+.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.saviantconsulting.com/assets/img/dashboard/smart-home-automation.gif"><img alt="Azure Iot Smart Home Automation Solution This is the first time that. azure iot smart home automation solution" src="https://www.saviantconsulting.com/assets/img/dashboard/smart-home-automation.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwl7pVpf5jcXOCbk-exOBzVUZ7p6P5RguqNA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 700x402 px</li> 
+    <mark>Azure Iot Smart Home Automation Solution </mark> - Iot automation dashboard © gpl3+.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://assets.materialup.com/uploads/e59ea64b-c7ca-4307-881a-e7dbb358fc8f/preview.png"><img alt="Dashboard For Home Automation App Uplabs I&#039;ve had some questions lately about how we keep track of all the home automation devices spread across the house. dashboard for home automation app uplabs" src="https://assets.materialup.com/uploads/e59ea64b-c7ca-4307-881a-e7dbb358fc8f/preview.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-DDcpETJrp1y6OHcatggWsoCImQei6rbRQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x900 px</li> 
+    <mark>Dashboard For Home Automation App Uplabs </mark> - This is a basic home automation tutorial for how to setup a home automation dashboard.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="http://chrisnelson.ca/wp-content/uploads/2014/11/hadashboard.jpg"><img alt="Home Automation Dashboard For Smartthings Chris Nelson Dot Ca All the lights in my house are controllable through smartthings, but not all of them are wired up to wall switches. home automation dashboard for smartthings chris nelson dot ca" src="http://chrisnelson.ca/wp-content/uploads/2014/11/hadashboard.jpg" width="100%" onerror="this.onerror=null;this.src='Chris Nelson';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 725x520 px</li> 
+    <mark>Home Automation Dashboard For Smartthings Chris Nelson Dot Ca </mark> - 403 inspirational designs, illustrations, and graphic elements from the world&#039;s best designers.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.agocontrol.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-03-at-00.00.15.png"><img alt="Screenshots Ago Control Open Source Home Automation System Home automation dashboard app by axel nemeth on dribbble. open source home automation system" src="https://www.agocontrol.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-03-at-00.00.15.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvExgdxpDyzDZFEePMKM9WPvg0aG5NtAK8Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1311x653 px</li> 
+    <mark>Screenshots Ago Control Open Source Home Automation System </mark> - Appdaemon is a way to run python based automation apps for home assistant.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.maketecheasier.com/assets/uploads/2020/06/Domoticz-home-automation-dashboard.png"><img alt="How To Turn Your Raspberry Pi Into A Home Automation Dashboard Home automation dashboard app by axel nemeth on dribbble. home automation dashboard" src="https://www.maketecheasier.com/assets/uploads/2020/06/Domoticz-home-automation-dashboard.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXE_YA0Buna31Vo-huHrogSANMPfsUDOGMA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 700x166 px</li> 
+    <mark>How To Turn Your Raspberry Pi Into A Home Automation Dashboard </mark> - This is the first time that.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://heathpaddock.com/wp-content/uploads/2019/07/neptune02-955x1024.png"><img alt="Home Automation Dashboard Heath Paddock Discover 400+ home automation designs on dribbble. home automation dashboard heath paddock" src="https://heathpaddock.com/wp-content/uploads/2019/07/neptune02-955x1024.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvegKvsRBjlXwYA_gw0xBzpE1x4kLVAXCZqA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 955x1024 px</li> 
+    <mark>Home Automation Dashboard Heath Paddock </mark> - 403 inspirational designs, illustrations, and graphic elements from the world&#039;s best designers.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://iotplay.org/content/images/2020/03/post9_RHZA-Dashboard.png"><img alt="Using The New Node Red Ui Dashboard For Home Automation Descriptive Analytics 403 inspirational designs, illustrations, and graphic elements from the world&#039;s best designers. using the new node red ui dashboard for" src="https://iotplay.org/content/images/2020/03/post9_RHZA-Dashboard.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcWo41YD1tyQtWHudc5CPbKKOMYC-O1faC1w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 640x375 px</li> 
+    <mark>Using The New Node Red Ui Dashboard For Home Automation Descriptive Analytics </mark> - Discover 400+ home automation designs on dribbble.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://grafana.com/static/assets/img/blog/Camerons_Dashboard.jpg"><img alt="How To Set Up This Next Level Personal Home Dashboard In Your Kitchen Grafana Labs Home automation dashboard tutorial using home assistant, influxdb and grafana. personal home dashboard in your kitchen" src="https://grafana.com/static/assets/img/blog/Camerons_Dashboard.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55E4OyopD9bN_sKjJLWFi7FzCQtMyV_YWxg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 700x394 px</li> 
+    <mark>How To Set Up This Next Level Personal Home Dashboard In Your Kitchen Grafana Labs </mark> - Dashboard for all client types mqtt broker with client functionalities
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn3.iconfinder.com/data/icons/smart-home-33/100/04_home_automation_smart_home_dashboard_Automationhome_control-512.png"><img alt="Automation Dashboard Home Automation Home Control Smart Home Icon Download On Iconfinder Dashboard for all client types mqtt broker with client functionalities automation dashboard home automation home control smart home icon download on iconfinder" src="https://cdn3.iconfinder.com/data/icons/smart-home-33/100/04_home_automation_smart_home_dashboard_Automationhome_control-512.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTUl_FGU7szKOdQophPG4-OTou1kmsXDI9g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 512x512 px</li> 
+    <mark>Automation Dashboard Home Automation Home Control Smart Home Icon Download On Iconfinder </mark> - Discover 400+ home automation designs on dribbble.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://mma.prnewswire.com/media/892214/Hubitat_Elevation_Mobile_App_and_Home_Automation_Hub.jpg?p=publish"><img alt="Hubitat Unveils Mobile App For Hubitat Elevation Home Automation Platform Discover 400+ home automation designs on dribbble. hubitat unveils mobile app for hubitat elevation home automation platform" src="https://mma.prnewswire.com/media/892214/Hubitat_Elevation_Mobile_App_and_Home_Automation_Hub.jpg?p=publish" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnFaMxPp7KKy_erRKJl_ehJwcoQC8wbfEag&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2700x2025 px</li> 
+    <mark>Hubitat Unveils Mobile App For Hubitat Elevation Home Automation Platform </mark> - Home assistant sensor data logging with influxdb &amp; grafana.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn.dribbble.com/users/2742055/screenshots/7879473/dashboard-home_automation_4x.png"><img alt="Dashboard Home Automation By Saravanan On Dribbble I knew i had to have it! dashboard home automation by saravanan" src="https://cdn.dribbble.com/users/2742055/screenshots/7879473/dashboard-home_automation_4x.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjEJzRurVRMOmZaFJbXMr-TzcrEItpc3mtQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1600x1200 px</li> 
+    <mark>Dashboard Home Automation By Saravanan On Dribbble </mark> - So, i thought i&#039;d share how our dashboard is set up.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://repository-images.githubusercontent.com/239041269/aea20300-8e81-11ea-8355-ed70f8e246b0"><img alt="Github Tuanha2000vn Home Assistant Dashboard Home automation can include the scheduling and automatic operation of lighting, heating, air. github tuanha2000vn home assistant" src="https://repository-images.githubusercontent.com/239041269/aea20300-8e81-11ea-8355-ed70f8e246b0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwK9QSGjtxZGT5oWllRSwBqUYIhoTOUjDiRg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 640x320 px</li> 
+    <mark>Github Tuanha2000vn Home Assistant Dashboard </mark> - Thanks to dashboard layouts i no longer have to the main reason (in my opinion) home assistant is more popular than nodered is the gui (graphical.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://c8.alamy.com/comp/FFHFP4/flat-design-illustration-of-a-home-automation-dashboard-FFHFP4.jpg"><img alt="Flat Design Illustration Of A Home Automation Dashboard Stock Photo Alamy Home automation may include centralized control of lighting, hvac (heating, ventilation and air what is the best looking / user friendly dashboard available? https www alamy com stock photo flat design illustration of a home automation dashboard 95657244 html" src="https://c8.alamy.com/comp/FFHFP4/flat-design-illustration-of-a-home-automation-dashboard-FFHFP4.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1300x956 px</li> 
+    <mark>Flat Design Illustration Of A Home Automation Dashboard Stock Photo Alamy </mark> - I designed the compartments for the dashboard and battery box in adobe illustrator and cut them out of.2″ plywood on an epilog laser cutter.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/fzgOc1rEf7c/hqdefault.jpg"><img alt="Rasberry Home Automation Dashboard V2 Poc Youtube Automations make your home work for you in such a way that your devices switch on while loxone has put quite some effort into simplifying their automation dashboard, it&#039;s still. youtube" src="https://i.ytimg.com/vi/fzgOc1rEf7c/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTKePj94WNxMA9BvcBzlPDKJgNqSE-mT8JnA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Rasberry Home Automation Dashboard V2 Poc Youtube </mark> - Appdaemon is a way to run python based automation apps for home assistant.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://media.istockphoto.com/vectors/smart-home-automation-dashboard-example-with-flat-design-vector-id585320414"><img alt="Smart Home Automation Dashboard Example With Flat Design Stock Illustration Download Image Now Istock I knew i had to have it! 2" src="https://media.istockphoto.com/vectors/smart-home-automation-dashboard-example-with-flat-design-vector-id585320414" width="100%" onerror="this.onerror=null;this.src='https://www.istockphoto.com/photo/license-gm585320414-?utm_medium=organic&amp;utm_source=google&amp;utm_campaign=iptcurl';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1024x724 px</li> 
+    <mark>Smart Home Automation Dashboard Example With Flat Design Stock Illustration Download Image Now Istock </mark> - Dlya prosmotra onlayn kliknite na video ⤵.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/712/1*J2_TOFV7UpJ6a9xdLpEivA.png"><img alt="Step By Step How I Designed Smart Home Ui Dashboard By Willy Kimura Bunifu Framework Medium Thanks to dashboard layouts i no longer have to the main reason (in my opinion) home assistant is more popular than nodered is the gui (graphical. designed smart home ui dashboard" src="https://miro.medium.com/max/712/1*J2_TOFV7UpJ6a9xdLpEivA.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-HmWEvRYTtHQh8ifDMSa4wyCQvJnB65F6A&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 712x452 px</li> 
+    <mark>Step By Step How I Designed Smart Home Ui Dashboard By Willy Kimura Bunifu Framework Medium </mark> - Discover 400+ home automation designs on dribbble.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.pinimg.com/originals/e6/77/c9/e677c95d2f9330a28c9e09092b93965e.jpg"><img alt="Home Automation Dashboard App Dashboard App Home Automation Iot Design 403 inspirational designs, illustrations, and graphic elements from the world&#039;s best designers. home automation dashboard app" src="https://i.pinimg.com/originals/e6/77/c9/e677c95d2f9330a28c9e09092b93965e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIrKNP6PgZcw9-1rlaXJE-Is4ZhVaWoIFNg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 800x600 px</li> 
+    <mark>Home Automation Dashboard App Dashboard App Home Automation Iot Design </mark> - I knew i had to have it!
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/haiku-anime" target="_blank">Haiku Anime</a></li>
+		
+<li><a href="/posts/pixel-art-facile-pokemon" target="_blank">Pixel Art Facile Pokemon</a></li>
+		
+<li><a href="/posts/really-cool-among-us-wallpapers" target="_blank">Really Cool Among Us Wallpapers</a></li>
+		
+<li><a href="/posts/pubg-diamond-tier-png" target="_blank">Pubg Diamond Tier Png</a></li>
+		
+<li><a href="/posts/full-screen-pubg-guns-wallpaper-hd-4k" target="_blank">Full Screen Pubg Guns Wallpaper Hd 4K</a></li>
+		
+<li><a href="/posts/covid-vaccines-work-likely-also-transmission" target="_blank">Covid Vaccines Work. Likely Also Transmission</a></li>
+		
+<li><a href="/posts/marathi-rajbhasha-din-status-2021" target="_blank">Marathi Rajbhasha Din Status 2021</a></li>
+		
+<li><a href="/posts/pubg-joker-pic-hd" target="_blank">Pubg Joker Pic Hd</a></li>
+		
+<li><a href="/posts/miley-cyrus-super-bowl-performance" target="_blank">Miley Cyrus Super Bowl Performance</a></li>
+		
+<li><a href="/posts/slayer-south-of-heaven-cover" target="_blank">Slayer South Of Heaven Cover</a></li>
+		
+<li><a href="/posts/authorization-letter-sample-tagalog" target="_blank">Authorization Letter Sample Tagalog</a></li>
+		
+<li><a href="/posts/good-zoom-backgrounds-for-work" target="_blank">Good Zoom Backgrounds For Work</a></li>
+		
+<li><a href="/posts/red-and-black-gaming-png" target="_blank">Red And Black Gaming Png</a></li>
+		
+<li><a href="/posts/internet-safety-poster-for-kids-2021" target="_blank">Internet Safety Poster For Kids 2021</a></li>
+		
+<li><a href="/posts/free-fire-top-criminal-png" target="_blank">Free Fire Top Criminal Png</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/valentine-quotes-for-friends" target="_blank">Valentine Quotes For Friends</a></li>
+		
+<li><a href="/posts/cool-zoom-backgrounds-funny" target="_blank">Cool Zoom Backgrounds Funny</a></li>
+		
+<li><a href="/posts/best-cars-in-forza-horizon-4" target="_blank">Best Cars In Forza Horizon 4</a></li>
+		
+<li><a href="/posts/covid-symptoms-eye" target="_blank">Covid Symptoms Eye</a></li>
+		
+<li><a href="/posts/wallpapers-4k-for-pc-nature" target="_blank">Wallpapers 4K For Pc Nature</a></li>
+		
+<li><a href="/posts/aesthetic-wallpapers-ipad-pro" target="_blank">Aesthetic Wallpapers Ipad Pro</a></li>
+		
+<li><a href="/posts/status-images-of-republic-day" target="_blank">Status Images Of Republic Day</a></li>
+		
+<li><a href="/posts/drawing-buddha-images-black-and-white" target="_blank">Drawing Buddha Images Black And White</a></li>
+		
+<li><a href="/posts/how-to-write-a-letter-to-a-teacher" target="_blank">How To Write A Letter To A Teacher</a></li>
+		
+<li><a href="/posts/nature-16k-images" target="_blank">Nature 16K Images</a></li>
+		
+<li><a href="/posts/rocking-chair-vitra" target="_blank">Rocking Chair Vitra</a></li>
+		
+<li><a href="/posts/staring-into-the-abyss-meaning" target="_blank">Staring Into The Abyss Meaning</a></li>
+		
+<li><a href="/posts/pubg-landing-images" target="_blank">Pubg Landing Images</a></li>
+		
+<li><a href="/posts/juice-wrld-ps5-hd" target="_blank">Juice Wrld Ps5 Hd</a></li>
+		
+<li><a href="/posts/wallpapers-for-iphone-12-max" target="_blank">Wallpapers For Iphone 12 Max</a></li>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 vincent color
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
